@@ -1,0 +1,41 @@
+{
+  "name": "umber/prototype",
+  "description": "A series of prototype interfaces/traits.",
+  "type": "library",
+  "license": "MIT",
+
+  "require": {
+    "php": ">=7.1"
+  },
+
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Umber\\Prototype\\": "src/Umber/Prototype"
+    }
+  },
+
+  "autoload-dev": {
+    "psr-4": {
+      "Umber\\Prototype\\Tests\\": "tests/Umber/Prototype/Tests"
+    }
+  },
+
+  "extra": {
+    "branch-alias": {
+      "dev-develop": "0.1-dev"
+    }
+  },
+
+  "archive": {
+    "exclude": [
+      "!vendor",
+      "*phpunit.xml",
+      ".travis.yml",
+      "tests"
+    ]
+  }
+}
